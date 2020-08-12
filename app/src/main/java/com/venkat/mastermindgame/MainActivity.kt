@@ -12,8 +12,8 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    val letters = 'A'..'Z'
-    val word_length = 4
+    private val letters = 'A'..'Z'
+    private val wordLength = 4
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         check.setOnCheckedChangeListener { view, isCheckable->
             if(isCheckable) {
                 val input = "${one.text}${two.text}${three.text}${four.text}"
-                if(input.length<word_length){
+                if(input.length<wordLength){
                     Toast.makeText(this,"Please Enter 4 characters",Toast.LENGTH_LONG).show()
                     view.isChecked = false
                     return@setOnCheckedChangeListener
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
      val chars = letters.toMutableList()
      val random = Random()
      return buildString {
-         for(i in 1..word_length)
+         for(i in 1..wordLength)
          {
              val letter = chars[random.nextInt(chars.size)]
              append(letter)
