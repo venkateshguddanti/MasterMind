@@ -1,5 +1,5 @@
 # MasterMind
-master mind game to compare 4 digit randomly degenerate text with given input
+master mind game to compare 4 digit randomly generate text with given input
 
 GREEN -> When the character is in the right spot ORANGE -> When the character is in the random string but not in the right spot RED -> When the character is not in the random string
 
