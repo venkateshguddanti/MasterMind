@@ -41,6 +41,6 @@ class MasterMindsTest {
     fun testAllOrange() = testEvaluation("ABCD","DCBA",expectedAllOrange)
     @Test
     fun testRandom() = testEvaluation("ABCD","EBAF",expectedRandom)
-
-
+    @Test
+    fun test_generateWord() = assertNotNull(generateWord())
 }
